@@ -11,5 +11,5 @@ class Post(models.Model):
         return f'{self.title}, {self.author}'
 
     class Meta:
-        verbose_name = 'Запись'
+        verbose_name = 'Запис'
         verbose_name_plural = 'Записи'
