@@ -6,10 +6,11 @@ class Post(models.Model):
     description = models.TextField('Текст', null=True)
     author = models.CharField('Автор', max_length=100)
     date = models.DateField('Дата', null=True)
+    img = models.ImageField('Изображение', upload_to='image/%Y')
 
     def __str__(self):
         return f'{self.title}, {self.author}'
 
     class Meta:
-        verbose_name = 'Запис'
+        verbose_name = 'Запись'
         verbose_name_plural = 'Записи'
